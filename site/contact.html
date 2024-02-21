@@ -1,0 +1,101 @@
+<html lang="en">
+<head>
+  <title>Michael Campbell - Contact </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  <link rel="stylesheet" 
+      href="https://fonts.googleapis.com/css?family=Open Sans">
+<style>
+body {
+  font-family: "Open Sans",  sans-serif;
+}
+
+form {
+  max-width: 500px;
+  margin: 15px auto;
+}
+
+fieldset {
+  padding: 30px;
+}
+
+input,
+textarea,
+button {
+  width: 100%;
+}
+
+
+</style>
+  
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">Michael Campbell </a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="about.html">About </a></li>
+      <li class="active"><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+  <br>
+  <b> <H1 style ="text-align: center;"> CONTACT ME </H1> </b><br>
+  <h4 style="text-align: center;"> Send all work enquiries through the form below.</h4>
+  <br>
+  <hr style="width:60%;">
+ <!-- 
+    =======================================================================
+
+    This is a working contact form. To receive email, 
+    Replace YOUR_ACCESS_KEY_HERE with your actual Access Key.
+
+    Create Access Key here 👉 https://web3forms.com/
+
+    =======================================================================
+ -->
+
+<form action="https://api.web3forms.com/submit" method="POST" id="form">
+  <fieldset>
+    
+    <input type="hidden" name="access_key" value="2be0a7d9-063a-490c-939d-681a9ea38f0b" />
+    <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+    <input type="hidden" name="redirect" value="https://web3forms.com/success" />
+    <input type="checkbox" name="botcheck" id="" style="display: none;" />
+    <div>
+      <label for="name">Full Name</label><br>
+      <input type="text" name="name" id="name" placeholder="Mike Campbell" required />
+      <br><br>
+    </div>
+    <div>
+      <label for="email">Email Address</label><br>
+      <input type="email" name="email" id="email" placeholder="you@company.com" required /><br><br>
+    </div>
+    <div>
+      <label for="phone">Phone Number</label>
+      <br>
+      <input type="text" name="phone" id="phone" placeholder="01223 123456"  /><br><br>
+    </div>
+    <div>
+      <label for="message">Your Message</label>
+      <br>
+      <textarea rows="5" name="message" id="message" placeholder="Your Message" required></textarea><br><br>
+    </div>
+
+    <button type="submit"> Send Message </button>
+  </fieldset>
+</form> 
+
+
+
+</body>
+</html>
