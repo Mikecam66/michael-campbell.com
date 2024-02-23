@@ -10,6 +10,9 @@
 
 <style>
 
+a:hover {
+  color: black;
+}
 body {
   font-family: "Open Sans";
     margin: 0;
@@ -26,23 +29,22 @@ ul {
   overflow: hidden;
   background-color: #f8f8f8;
   position: relative;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid #e7e7e7;
 }
 
 li {
   float: left;
-
   
 }
 
 
-
 li a {
   display: block;
-  color: rgba(0, 0, 0, 0.432);
+  color: #666;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  
 }
 
 li a:hover:not(.active) {
@@ -51,8 +53,8 @@ li a:hover:not(.active) {
 
 .active {
   background-color: #e7e7e780;
+  color: black;
 }
-
 
 </style>
 </head>
@@ -60,11 +62,12 @@ li a:hover:not(.active) {
 
     
 <ul>
-  <li><a  href="#index.html">Home</a></li>
+  <li><a href="#index.html">Home</a></li>
   <li><a href="#gallery.html">Gallery</a></li>
   <li><a class="active" href="#about.html">About</a></li>
   <li><a href="#contact.html">Contact</a></li>
-  <li><a href="#socials">Socials</a></li>
+  <li><a href="#socials.html">Socials</a></li>
+  
 </ul>
 
 <br>
