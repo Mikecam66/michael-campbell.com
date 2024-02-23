@@ -73,7 +73,8 @@ li a:hover:not(.active) {
   <b> <H1 style ="text-align: center;"> CONTACT ME </H1> </b><br>
   <h4 style="text-align: center;"> Send all work enquiries through the form below.</h4>
   <br>
-  <hr style="width:60%;">
+  <hr style="height: 1px; width:60%; background-color: lightgray; color: lightgray; border-width:0;">
+  <br>
  <!-- 
     =======================================================================
 
@@ -85,7 +86,9 @@ li a:hover:not(.active) {
     =======================================================================
  -->
 
-<form action="https://api.web3forms.com/submit" method="POST" id="form" style="vertical-align: auto;">
+ <div style="display: block; text-align: center;">
+
+<form action="https://api.web3forms.com/submit" method="POST" id="form" style="display: inline-block; text-align: center; width: 22%;">
   <fieldset>
     
     <input type="hidden" name="access_key" value="2be0a7d9-063a-490c-939d-681a9ea38f0b" />
@@ -93,28 +96,29 @@ li a:hover:not(.active) {
     <input type="hidden" name="redirect" value="https://web3forms.com/success" />
     <input type="checkbox" name="botcheck" id="" style="display: none;" />
     <div>
-      <label for="name">Full Name</label><br>
-      <input type="text" name="name" id="name" placeholder="Mike Campbell" required />
+      <label style="vertical-align: left;" for="name" ;>Full Name</label><br>
+      <input type="text" name="name" style="width: 75%;" placeholder="Mike Campbell" required />
       <br><br>
     </div>
     <div>
       <label for="email">Email Address</label><br>
-      <input type="email" name="email" id="email" placeholder="you@company.com" required /><br><br>
+      <input type="email" name="email" id="email" style="width: 75%;"placeholder="you@company.com" required /><br><br>
     </div>
     <div>
       <label for="phone">Phone Number</label>
       <br>
-      <input type="text" name="phone" id="phone" placeholder="01223 123456"  /><br><br>
+      <input type="text" name="phone" id="phone" style="width: 75%;"placeholder="01223 123456"  /><br><br>
     </div>
     <div>
-      <label for="message">Your Message</label>
+      <label for="message">Subject</label>
       <br>
-      <textarea rows="5" name="message" id="message" placeholder="Your Message" required></textarea><br><br>
+      <textarea rows="5" name="message" id="message" style="width: 75%;" placeholder="Your Message" required></textarea><br><br>
     </div>
 
     <button type="submit"> Send Message </button>
   </fieldset>
 </form> 
+</div>
 
 
 
