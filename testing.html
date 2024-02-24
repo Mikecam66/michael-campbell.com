@@ -12,6 +12,72 @@
 
 a:hover {
   color: black;
+}<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Michael Campbell - Gallery </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" 
+      href="https://fonts.googleapis.com/css?family=Open Sans">
+
+
+<style>
+
+div.gallery {
+  border: 1px solid #ccc;}
+  div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap; 
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.0%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+a:hover {
+  color: black;
 }
 body {
   font-family: "Open Sans";
@@ -63,63 +129,100 @@ li a:hover:not(.active) {
     
 <ul>
   <li><a href="index.html">Home</a></li>
-  <li><a href="gallery.html">Gallery</a></li>
+  <li><a class="active" ref="gallery.html">Gallery</a></li>
   <li><a href="about.html">About</a></li>
-  <li><a class="active" href="contact.html">Contact</a></li>
+  <li><a href="contact.html">Contact</a></li>
   <li><a href="socials.html">Socials</a></li>
   
 </ul>
-  <br>
-  <b> <H1 style ="text-align: center;"> CONTACT ME </H1> </b><br>
-  <h4 style="text-align: center;"> Send all work enquiries through the form below.</h4>
+</nav>
+  <BR>
+<H1 style ="text-align: center;"> GALLERY </H1><br>
+<h3 style="text-align: center;">A selection of  work i've completed. Click each image for more information.</h3>
   <br>
   <hr style="height: 1px; width:60%; background-color: lightgray; color: lightgray; border-width:0;">
   <br>
- <!-- 
-    =======================================================================
 
-    This is a working contact form. To receive email, 
-    Replace YOUR_ACCESS_KEY_HERE with your actual Access Key.
-
-    Create Access Key here 👉 https://web3forms.com/
-
-    =======================================================================
- -->
-
- <div style="display: block; text-align: center;">
-
-<form action="https://api.web3forms.com/submit" method="POST" id="form" style="display: inline-block; text-align: center; width: 22%;">
-  <fieldset>
-    
-    <input type="hidden" name="access_key" value="2be0a7d9-063a-490c-939d-681a9ea38f0b" />
-    <input type="hidden" name="subject" value="New Submission from Web3Forms" />
-    <input type="hidden" name="redirect" value="https://web3forms.com/success" />
-    <input type="checkbox" name="botcheck" id="" style="display: none;" />
-    <div>
-      <label style="vertical-align: left;" for="name" ;>Full Name</label><br>
-      <input type="text" name="name" style="width: 75%;" placeholder="Mike Campbell" required />
-      <br><br>
+  <div class="responsive">
+    <div class="gallery">
+      <a href="gallery posts/gallerypost1.html">
+        <img src="images/gallery images/thumb1.jpg" alt="Damp-proofing an interwar flat in Cambridge" width="600" height="400">
+      </a>
+      <div class="desc">Damp-proofing an interwar flat in Cambridge</div>
     </div>
-    <div>
-      <label for="email">Email Address</label><br>
-      <input type="email" name="email" id="email" style="width: 75%;"placeholder="you@company.com" required /><br><br>
+  </div>
+  
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a href="gallery posts/gallerypost2.html">
+        <img src="images/gallery images/thumb2.jpg" alt="Improving the sub-floor ventilation to a Victorian terrace in Ely" width="600" height="400">
+      </a>
+      <div class="desc" style="overflow: hidden;">Improving the sub-floor ventilation to a Victorian terrace in Ely</div>
     </div>
-    <div>
-      <label for="phone">Phone Number</label>
-      <br>
-      <input type="text" name="phone" id="phone" style="width: 75%;"placeholder="01223 123456"  /><br><br>
+  </div>
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a href="gallery posts/gallerypost3.html">
+        <img src="images/gallery images/thumb3.jpg" alt="Damp-proofing and replastering to a Victorian cottage" width="600" height="400">
+      </a>
+      <div class="desc">Damp-proofing and replastering to a Victorian cottage</div>
     </div>
-    <div>
-      <label for="message">Subject</label>
-      <br>
-      <textarea rows="5" name="message" id="message" style="width: 75%;" placeholder="Your Message" required></textarea><br><br>
+  </div>
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a href="gallery posts/gallerypost4.html">
+        <img src="images/gallery images/thumb4.jpg" alt="Floor repairs to a Victorian house in Cambridge" width="600" height="400">
+      </a>
+      <div class="desc">Floor repairs to a Victorian house in Cambridge</div>
     </div>
+  </div>
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a href="gallery posts/gallerypost5.html">
+        <img src="images/gallery images/thumb5.jpg" alt="Inspection of the Trinity College Chapel roof" width="600" height="400">
+      </a>
+      <div class="desc">Inspection of the Trinity College Chapel roof</div>
+    </div>
+  </div>
 
-    <button type="submit"> Send Message </button>
-  </fieldset>
-</form> 
-</div>
+  <div class="responsive">
+    <div class="gallery">
+      <a href="gallery posts/gallerypost6.html">
+        <img src="images/gallery images/thumb6.jpg" alt="Internal solid wall insulation to a Victorian brick porch" width="600" height="400">
+      </a>
+      <div class="desc">Internal solid wall insulation to a Victorian brick porch</div>
+    </div>
+  </div>
 
+  <div class="responsive">
+    <div class="gallery">
+      <a href="gallery posts/gallerypost7.html">
+        <img src="images/gallery images/thumb7.jpg" alt="Damp-proofing & timber treatment to a South Cambs. Cottage" width="600" height="400">
+      </a>
+      <div class="desc">Damp-proofing & timber treatment to a South Cambs. Cottage</div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a href="gallery posts/gallerypost8.html">
+        <img src="images/gallery images/thumb8.jpg" alt="Timber treatment and floor repairs to a residential property in Cambridge" width="600" height="400">
+      </a>
+      <div class="desc">Timber treatment and floor repairs to a residential property in Cambridge</div>
+    </div>
+  </div>
+
+  <div class="clearfix"></div>
+  
+  <div style="padding:3px;">
+
+
+
+<br><br><br>
 
 
 </body>
